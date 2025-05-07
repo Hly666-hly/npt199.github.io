@@ -1,112 +1,185 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
+    <title>Academic Papers</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             color: #333;
-            text-align: left;
+            text-align: center;
             padding: 20px;
             max-width: 800px;
             margin: 0 auto;
         }
         h1 {
             color: #007BFF;
-            text-align: center;
         }
-        .link-item {
-            margin: 15px 0;
+        .paper-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
-        a {
+        .paper-item {
+            background: white;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+        .paper-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #0066cc;
+        }
+        .paper-authors-year {
+            font-style: italic;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        .paper-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .paper-link {
+            margin-top: 10px;
+        }
+        .paper-link a {
             color: #0066cc;
             text-decoration: none;
         }
-        a:hover {
+        .paper-link a:hover {
             text-decoration: underline;
-        }
-        .link-info {
-            display: flex;
-            justify-content: space-between;
-        }
-        .link-title {
-            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1>Academic Papers</h1>
+    <h1>Academic Papers </h1>
     
-    <div class="link-item">
-        <div class="link-info">
-            <span class="link-title">Disruption recovery for the pickup and delivery problem with time windows—A scenario-based approach for online food delivery</span>
-            <a href="https://doi.org/10.1016/j.cor.2023.106337">Access the link</a>
+    <div class="paper-list">
+        <div class="paper-item">
+            <div class="paper-authors-year">Hu, Y. et al. (2023)</div>
+            <div class="paper-title">1. Disruption recovery for the pickup and delivery problem with time windows—A scenario-based approach for online food delivery</div>
+            <div class="paper-info">
+                <div>Method Type: Scenario-based method, extension of the Adaptive Large Neighborhood Search heuristic algorithm (ALNS)</div>
+                <div>Application Area: Logistics and transportation, online food delivery services</div>
+            </div>
+            <div class="paper-link">
+                <a href="https://doi.org/10.1016/j.cor.2023.106337">Access the link</a>
+            </div>
         </div>
-    </div>
 
-    <div class="link-item">
-        <div class="link-info">
-            <span class="link-title">Customized Bus Service Design With Holding Control and Heterogeneous Fleet: A Column-Generation-Based Decomposition Algorithm</span>
-            <a href="https://doi.org/10.1109/TITS.2024.3450526">Access the link</a>
+        <div class="paper-item">
+            <div class="paper-authors-year">Li, X., Zhao, Y. and Feng, Z. (2024)</div>
+            <div class="paper-title">2. Customized Bus Service Design With Holding Control and Heterogeneous Fleet: A Column-Generation-Based Decomposition Algorithm</div>
+            <div class="paper-info">
+                <div>Method Type: Mixed-integer nonlinear programming model, column generation (CG) algorithm, improved genetic algorithm (IGA), linearization technology</div>
+                <div>Application Area: Urban transportation and public transportation system optimization</div>
+            </div>
+            <div class="paper-link">
+                <a href="https://doi.org/10.1109/TITS.2024.3450526">Access the link</a>
+            </div>
         </div>
-    </div>
 
-    <div class="link-item">
-        <div class="link-info">
-            <span class="link-title">Multi-Objective Optimization for the m-PDPTW: Aggregation Method With Use of Genetic Algorithm and Lower Bounds</span>
-            <a href="https://doi.org/10.15837/ijccc.2011.2.2172">Access the link</a>
+        <div class="paper-item">
+            <div class="paper-authors-year">Dridi, I.H. et al. (2011)</div>
+            <div class="paper-title">3. Multi-Objective Optimization for the m-PDPTW: Aggregation Method With Use of Genetic Algorithm and Lower Bounds</div>
+            <div class="paper-info">
+                <div>Method Type: Genetic algorithms, aggregation methods, lower bound calculations</div>
+                <div>Application Area: Logistics and transportation, vehicle routing</div>
+            </div>
+            <div class="paper-link">
+                <a href="https://doi.org/10.15837/ijccc.2011.2.2172">Access the link</a>
+            </div>
         </div>
-    </div>
 
-    <div class="link-item">
-        <div class="link-info">
-            <span class="link-title">The location selection problem for the household activity pattern problem</span>
-            <a href="https://doi.org/10.1016/j.trb.2013.05.003">Access the link</a>
+        <div class="paper-item">
+            <div class="paper-authors-year">Kang, J.E. and Recker, W. (2013)</div>
+            <div class="paper-title">4. The location selection problem for the household activity pattern problem</div>
+            <div class="paper-info">
+                <div>Method Type: Dynamic programming algorithm</div>
+                <div>Application Area: Personal travel planning</div>
+            </div>
+            <div class="paper-link">
+                <a href="https://doi.org/10.1016/j.trb.2013.05.003">Access the link</a>
+            </div>
         </div>
-    </div>
 
-    <div class="link-item">
-        <div class="link-info">
-            <span class="link-title">A Comparative Study of the PSO and GA for the m-MDPDPTW</span>
-            <a href="https://doi.org/10.15837/ijccc.2018.1.2970">Access the link</a>
+        <div class="paper-item">
+            <div class="paper-authors-year">Essia, B.A. et al. (2018)</div>
+            <div class="paper-title">5. A Comparative Study of the PSO and GA for the m-MDPDPTW</div>
+            <div class="paper-info">
+                <div>Method Type: Evolutionary algorithms (genetic algorithms, particle swarm optimization)</div>
+                <div>Application Area: Logistics and distribution</div>
+            </div>
+            <div class="paper-link">
+                <a href="https://doi.org/10.15837/ijccc.2018.1.2970">Access the link</a>
+            </div>
         </div>
-    </div>
 
-    <div class="link-item">
-        <div class="link-info">
-            <span class="link-title">PDPTW based Taxi Dispatch Modeling for Booking Service</span>
-            <a href="https://doi.org/10.1109/ICNC.2009.676">Access the link</a>
+        <div class="paper-item">
+            <div class="paper-authors-year">Hao Wang, Der-Horng Lee and Ruey Cheu (2009)</div>
+            <div class="paper-title">6. PDPTW based Taxi Dispatch Modeling for Booking Service</div>
+            <div class="paper-info">
+                <div>Method Type: Heuristic algorithm (based on PDPTW customized algorithm)</div>
+                <div>Application Area: Taxi dispatch service</div>
+            </div>
+            <div class="paper-link">
+                <a href="https://doi.org/10.1109/ICNC.2009.676">Access the link</a>
+            </div>
         </div>
-    </div>
 
-    <div class="link-item">
-        <div class="link-info">
-            <span class="link-title">Parallel Solver for Vehicle Routing and Pickup and Delivery Problems with Time Windows Based on Agent Negotiation</span>
-            <a href="https://doi.org/10.1109/ICSMC.2012.6377958">Access the link</a>
+        <div class="paper-item">
+            <div class="paper-authors-year">Kalina, P. and Vokrinek, J. (2012)</div>
+            <div class="paper-title">7. Parallel Solver for Vehicle Routing and Pickup and Delivery Problems with Time Windows Based on Agent Negotiation</div>
+            <div class="paper-info">
+                <div>Method Type: Metaheuristic algorithms (multi-agent negotiation)</div>
+                <div>Application Area: Logistics and distribution</div>
+            </div>
+            <div class="paper-link">
+                <a href="https://doi.org/10.1109/ICSMC.2012.6377958">Access the link</a>
+            </div>
         </div>
-    </div>
 
-    <div class="link-item">
-        <div class="link-info">
-            <span class="link-title">A Parallel Memetic Algorithm for the Pickup and Delivery Problem with Time Windows</span>
-            <a href="https://doi.org/10.1109/PDP.2017.75">Access the link</a>
+        <div class="paper-item">
+            <div class="paper-authors-year">Nalepa, J. and Blocho, M. (2017)</div>
+            <div class="paper-title">8. A Parallel Memetic Algorithm for the Pickup and Delivery Problem with Time Windows</div>
+            <div class="paper-info">
+                <div>Method Type: Metaheuristic algorithms (parallel memetic algorithm)</div>
+                <div>Application Area: Logistics and distribution</div>
+            </div>
+            <div class="paper-link">
+                <a href="https://doi.org/10.1109/PDP.2017.75">Access the link</a>
+            </div>
         </div>
-    </div>
 
-    <div class="link-item">
-        <div class="link-info">
-            <span class="link-title">A Hybrid Intelligent Algorithm for Vehicle Pick-up and Delivery Problem with Time Windows</span>
-            <a href="https://doi.org/10.1109/CHICC.2006.4347344">Access the link</a>
+        <div class="paper-item">
+            <div class="paper-authors-year">Liao Li et al. (2007)</div>
+            <div class="paper-title">9. A Hybrid Intelligent Algorithm for Vehicle Pick-up and Delivery Problem with Time Windows</div>
+            <div class="paper-info">
+                <div>Method Type: Hybrid intelligent algorithm (clustering, genetic algorithm, tabu search)</div>
+                <div>Application Area: Logistics and distribution</div>
+            </div>
+            <div class="paper-link">
+                <a href="https://doi.org/10.1109/CHICC.2006.4347344">Access the link</a>
+            </div>
         </div>
-    </div>
 
-    <div class="link-item">
-        <div class="link-info">
-            <span class="link-title">Implementing a Pickup and Delivery Problem with Time Windows Algorithm on a GPU Cluster</span>
-            <a href="https://nusearch.nottingham.edu.cn/permalink/f/s8ggqh/TN_cdi_ieee_primary_6316661">Access the link</a>
+        <div class="paper-item">
+            <div class="paper-authors-year">Srimool, G., Uthayopas, P. and Pichitlamkhen, J. (2011)</div>
+            <div class="paper-title">10. Implementing a Pickup and Delivery Problem with Time Windows algorithm on a GPU Cluster</div>
+            <div class="paper-info">
+                <div>Method Type: Parallel computing (GPU acceleration)</div>
+                <div>Application Area: Large-scale logistics systems</div>
+            </div>
+            <div class="paper-link">
+                <a href="https://nusearch.nottingham.edu.cn/permalink/f/s8ggqh/TN_cdi_ieee_primary_6316661">Access the link</a>
+            </div>
         </div>
     </div>
 </body>
